@@ -1,6 +1,6 @@
 import { Id } from '@/core/entities/id'
 
-import { Answer } from '../entities/answer'
+import { Answer } from '../../enterprise/entities/answer'
 import { AnswerRepository } from '../repositories/answer-repository'
 
 interface AnswerQuestionUseCaseRequest {
@@ -22,6 +22,7 @@ export class AnswerQuestionUseCase {
       questionId: new Id(questionId),
       authorId: new Id(instructorId),
     })
+    await this.answerRepository.create(answer)
     return answer
   }
 }
