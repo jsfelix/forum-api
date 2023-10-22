@@ -6,6 +6,7 @@
   "scripts": {
     "test": "vitest run",
     "test:watch": "vitest",
+    "test:cov": "vitest --coverage",
     "prelint": "tsc --noemit",
     "lint": "eslint src --ext .ts --max-warnings 0",
     "lint:fix": "eslint src --ext .ts --fix"
@@ -16,6 +17,7 @@
   "devDependencies": {
     "@jsfelix/eslint-config": "1.2.6",
     "@types/node": "20.8.7",
+    "@vitest/coverage-v8": "0.34.6",
     "eslint": "8.51.0",
     "tsup": "7.2.0",
     "tsx": "3.14.0",
