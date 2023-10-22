@@ -11,7 +11,7 @@ describe('Create Question Use Case', () => {
     sut = new AnswerQuestionUseCase(answerRepository)
   })
 
-  it('should be able to create a question', async () => {
+  it('should be able to answer a question', async () => {
     const { answer } = await sut.execute({
       questionId: '1',
       instructorId: '2',
