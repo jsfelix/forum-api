@@ -1,4 +1,4 @@
-import { InMemoryQuestionRepository } from '@/test/repositories/in-memory-question-repository'
+import { InMemoryQuestionRepository } from 'test/repositories/in-memory-question-repository'
 
 import { CreateQuestionUseCase } from './create-question'
 
