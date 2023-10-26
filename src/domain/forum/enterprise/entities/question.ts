@@ -32,7 +32,7 @@ export class Question extends Entity<QuestionProps> {
   }
 
   set content(content: string) {
-    this.content = content
+    this.props.content = content
     this.touch()
   }
 
